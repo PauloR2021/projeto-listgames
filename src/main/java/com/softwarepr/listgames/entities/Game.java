@@ -9,7 +9,7 @@ import jakarta.persistence.Table;
 
 @Entity /*Importando a Anotaions para a Classe ser equivalente ao uma tabela do Banco de Dados */
 @Table(name = "tb_game") /*Colocando nome na tabela do Banco de Dados */
-public class Games {
+public class Game {
 
     /*Criando os Argumentos Privados para a Classe */
 
@@ -30,11 +30,11 @@ public class Games {
 
 
     /*Criando um Construtor Vazio para a Classe */
-    public Games(){}
+    public Game(){}
 
 
     /*Criando um Construtor Passando os Argumentos para Ele */
-    public Games(Long id, String title, Integer year, String genre, String platforms, Double score, String imgUrl,
+    public Game(Long id, String title, Integer year, String genre, String platforms, Double score, String imgUrl,
             String shortDescription, String longDescription) {
         this.id = id;
         this.title = title;
@@ -140,7 +140,7 @@ public class Games {
             return false;
         if (getClass() != obj.getClass())
             return false;
-        Games other = (Games) obj;
+        Game other = (Game) obj;
         if (id == null) {
             if (other.id != null)
                 return false;
