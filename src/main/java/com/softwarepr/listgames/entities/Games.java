@@ -23,7 +23,9 @@ public class Games {
     private String platforms;
     private Double score;
     private String imgUrl;
+    @Column(columnDefinition = "TEXT") /*Permitindo colocar textos Longos dentro da Tabela do Banco de Dados */
     private String shortDescription;
+    @Column(columnDefinition = "TEXT") /*Permitindo colocar textos Longos dentro da Tabela do Banco de Dados */
     private String longDescription;
 
 
