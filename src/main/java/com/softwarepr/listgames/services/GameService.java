@@ -36,7 +36,6 @@ public class GameService {
         return result.stream().map(GameMinDto::new).toList();
     }
 
-    
     @Transactional(readOnly = true)
     public List<GameMinDto> findBylist(Long listId){
         List<GameMinProjection> result = gameRepository.searchByList(listId);
