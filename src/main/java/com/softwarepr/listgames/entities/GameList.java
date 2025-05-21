@@ -1,7 +1,5 @@
 package com.softwarepr.listgames.entities;
 
-import javax.print.DocFlavor.STRING;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -10,7 +8,7 @@ import jakarta.persistence.Table;
 
 
 @Entity
-@Table(name = "tb_ game_list")
+@Table(name = "tb_game_list")
 public class GameList {
 
 

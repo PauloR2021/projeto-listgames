@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.softwarepr.listgames.dto.GameMinDto;
-import com.softwarepr.listgames.entities.Game;
 import com.softwarepr.listgames.services.GameService;
 
 /* Criando o Caminho da API*/ 
