@@ -42,4 +42,5 @@ public class GameService {
         return result.stream().map(GameMinDto::new).toList();
     }
 
+
 }
